@@ -1,3 +1,7 @@
+# Ignore hidden folders #
+# This takes care of .tmp, .sass-cache, and many others #
+.*/
+
 # https://raw.githubusercontent.com/github/gitignore/master/C.gitignore
 # Object files
 *.o
