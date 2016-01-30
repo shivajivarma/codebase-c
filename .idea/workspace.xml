@@ -41,9 +41,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af328361-0f92-46e7-b67b-9b7481b45be4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/AnagramTest.c" afterPath="$PROJECT_DIR$/test/AnagramTest.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ArmstrongNumberTest.c" afterPath="$PROJECT_DIR$/test/ArmstrongNumberTest.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="codebase.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,14 +96,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArmstrongNumberTest.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArmstrongNumberTest.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ArmstrongNumberTest.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5260771">
+            <state vertical-scroll-proportion="0.0">
               <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor vertical-scroll-proportion="0.23294118">
+                <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -125,16 +136,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="armstrong-number.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/armstrong-number/armstrong-number.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -210,6 +211,7 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/test/AnagramTest.c" />
         <option value="$PROJECT_DIR$/test/ArmstrongNumberTest.c" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -888,11 +890,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ArmstrongNumberTest.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5260771">
+        <state vertical-scroll-proportion="0.0">
           <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor vertical-scroll-proportion="0.23294118">
+            <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
