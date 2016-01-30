@@ -1,0 +1,1 @@
+int isAnagram(char *a, char *b);

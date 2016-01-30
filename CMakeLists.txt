@@ -3,9 +3,11 @@ cmake_minimum_required(VERSION 3.3)
 project (cutest C)
 
 FILE (GLOB LIB_HDR *.h)
-add_library (${PROJECT_NAME} test/lib/CuTest.c ${LIB_HDR} src/anagram/lib.h)
+add_library (${PROJECT_NAME} test/lib/CuTest.c ${LIB_HDR})
 
-add_executable (CuTestTest test/AllTests.c test/Sample.c test/Sample2.c)
+add_subdirectory(src)
+
+add_executable (CuTestTest test/AllTests.c test/Sample.c test/Sample2.c src/anagram/anagram.c)
 target_link_libraries (CuTestTest cutest)
 
 enable_testing()

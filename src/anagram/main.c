@@ -1,9 +1,7 @@
-//
-// Created by Shivaji on 1/30/2016.
-//
-
 #include <stdio.h>
-#include "lib.h"
+#include "anagram.h"
+
+#define MAX_LENGTH 256
 
 int main (int argc, char** argv) {
 

@@ -4,17 +4,22 @@ project(codebase_c)
 
 add_definitions(-std=c++11)
 
+set (SOURCES anagram/anagram.c)
+
+add_executable (adder anagram/main.c ${SOURCES})
+
 #set(HEADER_FILES
-#    calendar_defs.h
-#    General.h
-#    GregorianCalendar.h
-#    JulianCalendar.h
-#    IslamicCalendar.h
-#    HebrewCalendar.h
+#    anagram/lib.h
 #    )
 
 set(SOURCE_FILES
-        anagram/lib.c
+        #anagram/main.c
+        armstrong-number/program.c
+        #gcd/main.c
+        #leap-year/main.c
+        #palindrome/main.c
     )
+
+#add_executable(calendar_run ${SOURCE_FILES})
 
 add_library(codebase_c STATIC ${SOURCE_FILES})
