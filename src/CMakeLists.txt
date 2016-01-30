@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.7)
 
 project(src)
 
-add_definitions(-std=c++11)
+#add_definitions(-std=c++11)
 
 add_executable(anagram anagram/main.c anagram/anagram.c)
 add_executable(armstrong-number armstrong-number/main.c armstrong-number/armstrong-number.c)
