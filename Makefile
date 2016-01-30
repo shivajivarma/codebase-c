@@ -11,7 +11,7 @@ bin:
 test: bin/CuTestTest
 	@bin/CuTestTest
 
-bin/CuTestTest: AllTests.c CuTestTest.c CuTest.c | bin
+bin/CuTestTest: test/AllTests.c test/Sample.c test/Sample2.c test/lib/CuTest.c | bin
 	$(CC) $(CFLAGS) $(INCLUDES) -lm -o $@ $^
 
 clean:
