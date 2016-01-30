@@ -14,7 +14,7 @@ add_definitions(-std=c++11)
 #    )
 
 set(SOURCE_FILES
-    anagram/anagram.c
+        anagram/lib.c
     )
 
 add_library(codebase_c STATIC ${SOURCE_FILES})

@@ -1,14 +1,20 @@
-cmake_minimum_required(VERSION 2.8)
-project(Calendar)
+cmake_minimum_required(VERSION 3.3)
 
-add_definitions(-std=c++11)
+project (cutest C)
 
-set(SOURCE_FILES main.cpp)
-add_executable(codemons_c_run ${SOURCE_FILES})
+FILE (GLOB LIB_HDR *.h)
+add_library (${PROJECT_NAME} test/lib/CuTest.c ${LIB_HDR} src/anagram/lib.h)
 
-include_directories(src)
+add_executable (CuTestTest test/AllTests.c test/Sample.c test/Sample2.c)
+target_link_libraries (CuTestTest cutest)
 
-add_subdirectory(src)
-add_subdirectory(test)
+enable_testing()
+add_test (cutest CuTestTest)
 
-target_link_libraries(codemons_c_run src)
+IF (MSVC)
+    find_package (MSVC MODULE)
+    MSVC_CRT_SECURE_NO_WARNINGS (${PROJECT_NAME} CuTestTest)
+ENDIF (MSVC)
+
+set (CUTEST_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR} CACHE INTERNAL "CuTest headers")
+set (CUTEST_LIBRARIES cutest CACHE INTERNAL "CuTest libraries")

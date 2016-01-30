@@ -1,13 +1,18 @@
-CC = gcc
-define program_test
-	$(CC) $(1) -o test
-	./test
-	
-endef
-DIRECTORYS = $(wildcard */test.c) $(wildcard */*/test.c)
-all: test
-test:
-	$(foreach PROGRAM, $(DIRECTORYS), \
-	$(call program_test, $(PROGRAM))	\
-	)
+# I am not very good at Makefiles.
 
+CFLAGS += -Wall -g
+INCLUDES = -I.
+
+all: bin/CuTestTest
+
+bin:
+	mkdir -p $@
+
+test: bin/CuTestTest
+	@bin/CuTestTest
+
+bin/CuTestTest: AllTests.c CuTestTest.c CuTest.c | bin
+	$(CC) $(CFLAGS) $(INCLUDES) -lm -o $@ $^
+
+clean:
+	@rm -rf *~ bin
