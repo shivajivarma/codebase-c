@@ -3,7 +3,7 @@
 #include "lib/CuTest.h"
 
 CuSuite* CuStringGetSuite(void);
-CuSuite* CuStringGetSuite2(void);
+//CuSuite* CuStringGetSuite2(void);
 
 int RunAllTests(void)
 {
@@ -11,7 +11,7 @@ int RunAllTests(void)
 	CuSuite* suite = CuSuiteNew();
 
 	CuSuiteAddSuite(suite, CuStringGetSuite());
-	CuSuiteAddSuite(suite, CuStringGetSuite2());
+   //CuSuiteAddSuite(suite, CuStringGetSuite2());
 
 	CuSuiteRun(suite);
 	CuSuiteSummary(suite, output);
