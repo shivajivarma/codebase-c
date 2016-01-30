@@ -10,9 +10,10 @@
       <sourceFolder url="file://$MODULE_DIR$/src/anagram/main.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/anagram/anagram.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/ArmstrongNumberTest.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/lib/CuTest.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/lib/CuTest.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/test/Sample.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/AnagramTest.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/AllTests.c" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />

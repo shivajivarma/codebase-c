@@ -2,16 +2,16 @@
 
 #include "lib/CuTest.h"
 
-CuSuite* CuStringGetSuite(void);
-//CuSuite* CuStringGetSuite2(void);
+CuSuite* CuAnagramSuite(void);
+CuSuite* CuArmstrongNumberSuite(void);
 
 int RunAllTests(void)
 {
 	CuString *output = CuStringNew();
 	CuSuite* suite = CuSuiteNew();
 
-	CuSuiteAddSuite(suite, CuStringGetSuite());
-   //CuSuiteAddSuite(suite, CuStringGetSuite2());
+	CuSuiteAddSuite(suite, CuAnagramSuite());
+    CuSuiteAddSuite(suite, CuArmstrongNumberSuite());
 
 	CuSuiteRun(suite);
 	CuSuiteSummary(suite, output);
