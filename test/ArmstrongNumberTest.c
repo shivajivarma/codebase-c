@@ -20,7 +20,7 @@ void TestIsArmstrongPassCases(CuTest* tc)
 
 void TestIsArmstrongFailCases(CuTest* tc)
 {
-	CuAssertTrue(tc, isArmstrong(150) == 0);
+	CuAssertTrue(tc, isArmstrong(150) == 1);
 	CuAssertTrue(tc, isArmstrong(1150) == 0);
 }
 
