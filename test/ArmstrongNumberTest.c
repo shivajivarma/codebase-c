@@ -14,14 +14,14 @@
 
 void TestIsArmstrongPassCases(CuTest* tc)
 {
-	CuAssertTrue(tc, isArmstrong(153) == 1);
-	CuAssertTrue(tc, isArmstrong(371) == 1);
+	CuAssertTrue(tc, isArmstrong(153));
+	CuAssertTrue(tc, isArmstrong(371));
 }
 
 void TestIsArmstrongFailCases(CuTest* tc)
 {
-	CuAssertTrue(tc, isArmstrong(150) == 1);
-	CuAssertTrue(tc, isArmstrong(1150) == 0);
+	CuAssertTrue(tc, !isArmstrong(150));
+	CuAssertTrue(tc, !isArmstrong(1150));
 }
 
 CuSuite* CuArmstrongNumberSuite(void)

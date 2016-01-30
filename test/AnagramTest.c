@@ -14,14 +14,14 @@
 
 void TestIsAnagramPassCases(CuTest* tc)
 {
-	CuAssertTrue(tc, isAnagram("test","estt") == 1);
-	CuAssertTrue(tc, isAnagram("helloworld","wolrdheoll") == 1);
+	CuAssertTrue(tc, isAnagram("test","estt"));
+	CuAssertTrue(tc, isAnagram("helloworld","wolrdheoll"));
 }
 
 void TestIsAnagramFailCases(CuTest* tc)
 {
-	CuAssertTrue(tc, isAnagram("test","estt3") == 0);
-	CuAssertTrue(tc, isAnagram("helloworld","wklrdgheoll") == 0);
+	CuAssertTrue(tc, !isAnagram("test","estt3"));
+	CuAssertTrue(tc, !isAnagram("helloworld","wklrdgheoll"));
 }
 
 CuSuite* CuAnagramSuite(void)
