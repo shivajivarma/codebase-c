@@ -16,7 +16,7 @@
 
 void TestCuStringNew(CuTest* tc)
 {
-	CuAssertTrue(tc, isAnagram("test","estt") == 1);
+	CuAssertTrue(tc, isAnagram("test","estt") == 0);
 }
 
 CuSuite* CuStringGetSuite(void)
