@@ -1,15 +1,13 @@
 #include<stdio.h>
 
-void merge(int arr[],int low,int mid,int high)
-{
-    int i,j,k,l,b[20];
-    l=low;
-    i=low;
-    j=mid+1;
+void merge(int arr[], int low, int mid, int high) {
+    int i, j, k, l, b[20];
+    l = low;
+    i = low;
+    j = mid + 1;
 
-    while(i <= mid && j <= high)
-    {
-        if(arr[i] <= arr[j]) {
+    while (i <= mid && j <= high) {
+        if (arr[i] <= arr[j]) {
             b[l] = arr[i];
             i++;
         }
@@ -20,35 +18,31 @@ void merge(int arr[],int low,int mid,int high)
         l++;
     }
 
-    if(i > mid)
-        for(k = j; k <= high; k++)
-        {
+    if (i > mid)
+        for (k = j; k <= high; k++) {
             b[l] = arr[k];
             l++;
         }
     else
-        for(k = i; k <= mid; k++)
-        {
+        for (k = i; k <= mid; k++) {
             b[l] = arr[k];
             l++;
         }
 
-    for(k = low; k <= high; k++)
+    for (k = low; k <= high; k++)
         arr[k] = b[k];
 }
 
-void mergeSort(int *arr,int low,int high)
-{
+void mergeSort(int *arr, int low, int high) {
     int mid;
 
-    if(low < high)
-    {
-        mid = (low + high)/2;
+    if (low < high) {
+        mid = (low + high) / 2;
 
-        mergeSort(arr,low,mid);
-        mergeSort(arr,mid+1,high);
+        mergeSort(arr, low, mid);
+        mergeSort(arr, mid + 1, high);
 
-        merge(arr,low,mid,high);
+        merge(arr, low, mid, high);
     }
 }
 

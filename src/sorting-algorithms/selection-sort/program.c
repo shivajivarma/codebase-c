@@ -1,13 +1,11 @@
 #include<stdio.h>
 
-void selectionSort(int arr[],int arrSize)
-{
-    int i,j,k;
+void selectionSort(int arr[], int arrSize) {
+    int i, j, k;
     // Algorithm for sorting.
-    for(i = 0; i <= arrSize-2; i++)
-        for(j = i+1; j <= arrSize-1; j++)
-            if(arr[i] > arr[j])
-            {
+    for (i = 0; i <= arrSize - 2; i++)
+        for (j = i + 1; j <= arrSize - 1; j++)
+            if (arr[i] > arr[j]) {
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;

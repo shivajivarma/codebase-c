@@ -1,43 +1,38 @@
 #include<stdio.h>
 
-void swap(int *m,int *n)
-{
+void swap(int *m, int *n) {
     int temp = *m;
     *m = *n;
     *n = temp;
 }
 
-int partition(int *a,int lower,int upper)
-{
-    int key,i,j;
-    
-	i = lower + 1;
+int partition(int *a, int lower, int upper) {
+    int key, i, j;
+
+    i = lower + 1;
     j = upper;
     key = a[lower];
 
-    while(1)
-    {
-        while(a[i] <= key) i++;
-        while(a[j] > key) j--;
-        
-		if(j > i)
-			swap(&a[i],&a[j]);
+    while (1) {
+        while (a[i] <= key) i++;
+        while (a[j] > key) j--;
+
+        if (j > i)
+            swap(&a[i], &a[j]);
         else {
-            swap(&a[lower],&a[j]);
+            swap(&a[lower], &a[j]);
             break;
         }
     }
     return j;
 }
 
-void quickSort(int *arr,int lower,int upper)
-{
-    int i=0;
-    if(upper > lower)
-    {
+void quickSort(int *arr, int lower, int upper) {
+    int i = 0;
+    if (upper > lower) {
         i = partition(arr, lower, upper);
-        quickSort(arr, lower, i-1);
-        quickSort(arr, i+1, upper);
+        quickSort(arr, lower, i - 1);
+        quickSort(arr, i + 1, upper);
     }
 }
 

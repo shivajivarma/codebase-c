@@ -1,17 +1,15 @@
 #include<stdio.h>
 
-void insertionSort(int arr[],int arrSize)
-{
-    int i,j,k;
+void insertionSort(int arr[], int arrSize) {
+    int i, j, k;
     // Algorithm for sorting.
-    for(i=1; i < arrSize; i++)
-        for(j=0; j < i; j++)
-            if(arr[j] > arr[i])
-            {
+    for (i = 1; i < arrSize; i++)
+        for (j = 0; j < i; j++)
+            if (arr[j] > arr[i]) {
                 int temp = arr[i];
-                for(k=i; k > j; k--)
-                    arr[k] = arr[k-1];
-                arr[j]=temp;
+                for (k = i; k > j; k--)
+                    arr[k] = arr[k - 1];
+                arr[j] = temp;
             }
     //End of algorithm.
 }

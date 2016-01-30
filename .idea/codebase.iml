@@ -3,7 +3,9 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/armstrong-number/program.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/armstrong-number/armstrong-number.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/armstrong-number/main.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/armstrong-number/armstrong-number.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/anagram/anagram.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/anagram/main.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/anagram/anagram.c" isTestSource="false" />
@@ -12,7 +14,6 @@
       <sourceFolder url="file://$MODULE_DIR$/test/lib/CuTest.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/Sample.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/AllTests.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/test/Sample2.c" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

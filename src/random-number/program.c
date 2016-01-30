@@ -3,9 +3,9 @@
 #include <time.h>
 
 
-int generateRandomNumber(int n){
-    srand((unsigned)time(NULL));
-    return rand()%n + 1;
+int generateRandomNumber(int n) {
+    srand((unsigned) time(NULL));
+    return rand() % n + 1;
 }
 
 /*

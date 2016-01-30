@@ -1,7 +1,7 @@
 float farenheitToCelsius(long f) {
-	return (f - 32)/1.8;	
+    return (f - 32) / 1.8;
 }
 
 float celsiusToFarenheit(long c) {
-	return (c * 1.8) + 32;	
+    return (c * 1.8) + 32;
 }

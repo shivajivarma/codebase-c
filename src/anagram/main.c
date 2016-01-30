@@ -3,7 +3,7 @@
 
 #define MAX_LENGTH 256
 
-int main (int argc, char** argv) {
+int main(int argc, char **argv) {
 
     char a[MAX_LENGTH], b[MAX_LENGTH];
 

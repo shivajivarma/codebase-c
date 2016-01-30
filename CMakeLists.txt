@@ -5,10 +5,15 @@ project (cutest C)
 FILE (GLOB LIB_HDR *.h)
 add_library (${PROJECT_NAME} test/lib/CuTest.c ${LIB_HDR})
 
-add_subdirectory(src)
 
-add_executable (CuTestTest test/AllTests.c test/Sample.c test/Sample2.c src/anagram/anagram.c)
+
+add_executable (CuTestTest test/AllTests.c test/Sample.c)
+
+include_directories(src)
+add_subdirectory(src)
 target_link_libraries (CuTestTest cutest)
+target_link_libraries (CuTestTest src)
+
 
 enable_testing()
 add_test (cutest CuTestTest)
