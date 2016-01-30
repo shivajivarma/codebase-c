@@ -1,7 +1,14 @@
-cmake_minimum_required(VERSION 3.3)
-project(codebase)
+cmake_minimum_required(VERSION 2.8)
+project(Calendar)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+add_definitions(-std=c++11)
 
-set(SOURCE_FILES src/palindrome/palindrome.c)
-add_executable(codebase ${SOURCE_FILES})
+set(SOURCE_FILES main.cpp)
+add_executable(codemons_c_run ${SOURCE_FILES})
+
+include_directories(src)
+
+add_subdirectory(src)
+add_subdirectory(test)
+
+target_link_libraries(codemons_c_run src)

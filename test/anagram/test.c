@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "program.c"
+#include "src\anagram\anagram.c"
 
 int main(){
   
