@@ -1,6 +1,10 @@
 language: c
 compiler:
   - gcc
-  - clang
-script:
-  - cmake --build
+
+before_script:
+  - mkdir build
+  - cd build
+  - cmake ..
+
+script: make
