@@ -11,15 +11,15 @@ add_executable(anagram ${ANAGRAM_FILES})
 set(ARMSTRONG_FILES
         armstrong-number/main.c armstrong-number/armstrong-number.c)
 add_executable(armstrong-number ${ARMSTRONG_FILES})
-#add_executable (gcd gcd/main.c gcd/gcd.c)
-#add_executable (leap-year leap-year/main.c leap-year/leap-year.c)
+
+set(GCD_FILES
+        gcd/main.c gcd/gcd.c)
+add_executable(armstrong-number ${ARMSTRONG_FILES})
 
 set(SOURCE_FILES
         ${ANAGRAM_FILES}
         ${ARMSTRONG_FILES}
-        #gcd/gcd.c
-        #leap-year/leap-year.c
-        #palindrome/palindrome.c
+        ${GCD_FILES}
         )
 
 add_library(src STATIC ${SOURCE_FILES})
