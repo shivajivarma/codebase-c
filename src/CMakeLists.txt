@@ -14,7 +14,7 @@ add_executable(armstrong-number ${ARMSTRONG_FILES})
 
 set(GCD_FILES
         gcd/main.c gcd/gcd.c)
-add_executable(armstrong-number ${ARMSTRONG_FILES})
+add_executable(gcd ${GCD_FILES})
 
 set(SOURCE_FILES
         ${ANAGRAM_FILES}
