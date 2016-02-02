@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "gcd.h"
 
 int main() {

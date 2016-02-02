@@ -16,10 +16,15 @@ set(GCD_FILES
         gcd/main.c gcd/gcd.c)
 add_executable(gcd ${GCD_FILES})
 
+set(LEAP_YEAR_FILES
+        leap-year/main.c leap-year/leap-year.c)
+add_executable(leap-year ${LEAP_YEAR_FILES})
+
 set(SOURCE_FILES
         ${ANAGRAM_FILES}
         ${ARMSTRONG_FILES}
         ${GCD_FILES}
+        ${LEAP_YEAR_FILES}
         )
 
 add_library(src STATIC ${SOURCE_FILES})
