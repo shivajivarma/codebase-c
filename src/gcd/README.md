@@ -16,3 +16,5 @@ int gcd(int a,int b) {
         return gcd(c,a);
 }
 ```
+
+:+1:

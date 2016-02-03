@@ -21,5 +21,4 @@ int isLeapYear(int year){
 }
 ```
 
-With love,  
-_Shivaji Varma_
+:+1:
