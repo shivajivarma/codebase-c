@@ -6,4 +6,4 @@
 
 Contribute
 ==========
-Did you find a bug? any way to do it better? please feel free to pull-request it (or) drop a mail at **codebase@codemons.com** :)
+Did you find a bug? any way to do it better? please feel free to pull-request it (or) drop a mail at **codebase@codemons.com** :smiley:

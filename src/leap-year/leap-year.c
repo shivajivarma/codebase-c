@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int isLeapYear(int year) {
 
     if (year % 4 == 0) {
