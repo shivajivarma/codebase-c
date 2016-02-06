@@ -19,6 +19,9 @@ add_executable(leap-year ${LEAP_YEAR_FILES})
 set(BINARY_SEARCH_FILES searching-algorithms/binary-search/main.c searching-algorithms/binary-search/binary-search.c)
 add_executable(binary-search ${BINARY_SEARCH_FILES})
 
+set(DISPLAY_PATTERNS display-patterns/right-angled-triangle-left.c display-patterns/right-angled-triangle-right.c)
+add_executable(display-patterns display-patterns/right-angled-triangle-right.c)
+
 set(SOURCE_FILES
         ${ANAGRAM_FILES}
         ${ARMSTRONG_FILES}
