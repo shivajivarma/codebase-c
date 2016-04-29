@@ -17,7 +17,7 @@ Enter the number to be searched :: 102
 ```
 
 ###CODE
-```
+```c
 int linearSearch(int arr[],int arrSize,int search) {
     int c;
     for ( c = 0 ; c < arrSize ; c++ )
