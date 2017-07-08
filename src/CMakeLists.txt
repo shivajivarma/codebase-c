@@ -22,8 +22,8 @@ add_executable(binary-search ${BINARY_SEARCH_FILES})
 set(DISPLAY_PATTERNS display-patterns/right-angled-triangle-left.c display-patterns/right-angled-triangle-right.c)
 add_executable(display-patterns ${DISPLAY_PATTERNS})
 
-set(LEAP-YEAR leap-year/main.c leap-year/leap-year.c)
-add_executable(leap-year ${LEAP-YEAR})
+set(RANDOM_NUMBER random-number/random-number.c)
+add_executable(random-number ${RANDOM_NUMBER})
 
 set(SOURCE_FILES
         ${ANAGRAM_FILES}
