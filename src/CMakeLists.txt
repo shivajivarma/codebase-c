@@ -25,7 +25,7 @@ add_executable(right-angled-triangle-right ${RIGHT_ANGLED_TRIANGLE_RIGHT})
 set(RIGHT_ANGLED_TRIANGLE_LEFT display-patterns/right-angled-triangle-left.c)
 add_executable(right-angled-triangle-left ${RIGHT_ANGLED_TRIANGLE_LEFT})
 
-set(RANDOM_NUMBER random-number/random-number.c)
+set(RANDOM_NUMBER random-number/main.c random-number/random-number.c)
 add_executable(random-number ${RANDOM_NUMBER})
 
 set(SOURCE_FILES

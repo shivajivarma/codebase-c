@@ -1,0 +1,1 @@
+int generateRandomNumber(int n);
