@@ -20,7 +20,10 @@ set(BINARY_SEARCH_FILES searching-algorithms/binary-search/main.c searching-algo
 add_executable(binary-search ${BINARY_SEARCH_FILES})
 
 set(DISPLAY_PATTERNS display-patterns/right-angled-triangle-left.c display-patterns/right-angled-triangle-right.c)
-add_executable(display-patterns display-patterns/right-angled-triangle-right.c)
+add_executable(display-patterns ${DISPLAY_PATTERNS})
+
+set(LEAP-YEAR leap-year/main.c leap-year/leap-year.c)
+add_executable(leap-year ${LEAP-YEAR})
 
 set(SOURCE_FILES
         ${ANAGRAM_FILES}
