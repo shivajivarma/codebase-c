@@ -1,4 +1,4 @@
-[Linear Search](http://shivajivarma.com/code-base/c-camp/2015/01/05/searching-algorithms-linear-search/)
+[Linear Search](http://shivajivarma.com/code-base/c/2015/01/05/binary-search/)
 =============
 
 __Linear search__, also known as sequential search, is a process that checks every element in the list sequentially until the desired element is found.  
