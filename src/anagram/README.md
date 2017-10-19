@@ -5,7 +5,7 @@ __Anagram__ is a word or phrase formed by reordering the letters of another word
 
 > Program to find whether two strings are anagrams or not.
 
-###CODE
+### CODE
 ```c
 int isAnagram(char *a, char *b) {
 
