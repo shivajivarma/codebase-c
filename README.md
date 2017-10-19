@@ -1,4 +1,4 @@
-[Code Base](http://shivajivarma.com/code-base)
+[Code Base](https://github.com/shivajivarma/codebase-c)
 ===========
 
 '__[Code Base](https://github.com/shivajivarma/codebase-c)__' is a repository of programs, you can analyze and hack the code to learn programming. Algorithms playground for common questions solved in multiple languages. 
