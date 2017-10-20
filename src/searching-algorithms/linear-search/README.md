@@ -5,7 +5,7 @@ __Linear search__, also known as sequential search, is a process that checks eve
 
 > Program to perform search on set of numbers using Linear search technique.
 
-###Example
+### Example
 ```
 Enter size of the array :: 8
     
@@ -16,7 +16,7 @@ Enter the number to be searched :: 102
 102 is present at location 6.
 ```
 
-###CODE
+### CODE
 ```c
 int linearSearch(int arr[],int arrSize,int search) {
     int c;
@@ -33,5 +33,4 @@ int linearSearch(int arr[],int arrSize,int search) {
 }
 ```
 
-With love,  
-_Shivaji Varma_
+:+1:

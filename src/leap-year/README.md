@@ -3,7 +3,7 @@
 
 > Program to check whether a year is leap year or not
 
-###CODE
+### CODE
 ```c
 int isLeapYear(int year){
     

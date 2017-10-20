@@ -20,7 +20,7 @@ Enter elements into the array :: 5	7	6	3	10	2	4	1
 Sorted array :: 1	2	3	4	5	6	7	10
 ```
 
-###CODE
+### CODE
 ```c
 void bubbleSort(int arr[],int arrSize)
 {
@@ -36,5 +36,4 @@ void bubbleSort(int arr[],int arrSize)
 }
 ```
 
-With love,  
-_Shivaji Varma_
+:+1:

@@ -11,7 +11,7 @@ The steps are:
 
 > Program to perform sort on set of numbers using Quick sort technique.
 
-###Example
+### Example
 ```
 Enter size of the array :: 8
     
@@ -20,7 +20,7 @@ Enter elements into the array :: 5	7	6	3	10	2	4	1
 Sorted array :: 1	2	3	4	5	6	7	10
 ```
 
-###CODE
+### CODE
 ```c
 void swap(int *m,int *n)
 {
@@ -64,10 +64,9 @@ void quickSort(int *arr,int lower,int upper)
 }
 ```
 
-###Function Call
+### Function Call
 ```c
 quickSort(arr,0,arrSize-1);
 ```
 
-With love,  
-_Shivaji Varma_
+:+1:

@@ -17,7 +17,7 @@ Enter elements into the array :: 5	7	6	3	10	2	4	1
 Sorted array :: 1	2	3	4	5	6	7	10
 ```
 
-###CODE
+### CODE
 ```c
 void merge(int arr[],int low,int mid,int high)
 {
@@ -72,10 +72,9 @@ void mergeSort(int *arr,int low,int high)
 }
 ```
 
-###Function Call
+### Function Call
 ```c
 mergeSort(arr, 0, arrSize-1);
 ```
 
-With love,  
-_Shivaji Varma_
+:+1:

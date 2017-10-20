@@ -3,7 +3,7 @@
 
 Programs to display patterns like the right angled triangle, diamond etc.
 
-###CODE
+### CODE
 ```c
 int main()
 {
@@ -28,7 +28,7 @@ int main()
 }
 ```
 
-###RESULT
+### RESULT
 ```
 Enter the number of rows in triangle :: 6
 Enter a character to be printed :: a
@@ -40,6 +40,7 @@ aaaaa
 aaaaaa
 ```
 
+### CODE
 ```c
 int main()
 {
@@ -68,7 +69,7 @@ int main()
 }
 ```
 
-###RESULT
+### RESULT
 ```
 Enter the number of rows in triangle :: 6
 Enter a character to be printed :: a
@@ -79,3 +80,5 @@ Enter a character to be printed :: a
  aaaaa
 aaaaaa
 ```
+
+:+1:

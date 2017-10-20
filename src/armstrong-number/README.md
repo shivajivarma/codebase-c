@@ -8,7 +8,7 @@ Another example, 153. 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153.
 
 > Program to find whether the given number is an Armstrong number or not.
 
-###CODE
+### CODE
 ```c
 int isArmstrong(int num) {
 
@@ -26,3 +26,5 @@ int isArmstrong(int num) {
     return 0; // Failure
 }
 ```
+
+:+1:

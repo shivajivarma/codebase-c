@@ -7,7 +7,7 @@ For example, the GCD of 8 and 12 is 4.
 
 > Program to compute greatest common divisor.
 
-###CODE
+### CODE
 ```c
 int gcd(int a,int b) {
     if(b % a == 0)

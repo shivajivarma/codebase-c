@@ -11,5 +11,4 @@ int generateRandomNumber(int n){
 }
 ```
 
-With love,  
-_Shivaji Varma_
+:+1:
