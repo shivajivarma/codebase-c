@@ -13,5 +13,5 @@ int binarySearch(int arr[], int arrSize, int search) {
         }
     }
 
-    return pos;
+    return pos; // return -1, if search number is not found
 }
