@@ -13,9 +13,5 @@ int binarySearch(int arr[], int arrSize, int search) {
         }
     }
 
-    if (pos != -1) {
-        return pos;
-    } else {
-        return -1;
-    }
+    return pos;
 }
