@@ -1,4 +1,4 @@
-[Prime Number](http://codemons.com/codebase/prime-number/)
+[Prime Number](https://github.com/shivajivarma/codebase-c/blob/master/src/prime-number/program.c)
 =========
 
 > Program to check whether a number is prime or not
