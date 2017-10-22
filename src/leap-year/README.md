@@ -1,4 +1,4 @@
-[Leap Year](http://shivajivarma.com/code-base/c/2017/07/08/leap-year)
+[Leap Year](http://shivajivarma.com/code-base/2017/07/08/leap-year)
 =========
 
 > Program to check whether a year is leap year or not
