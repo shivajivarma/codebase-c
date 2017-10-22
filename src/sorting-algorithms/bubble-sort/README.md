@@ -1,4 +1,4 @@
-[Bubble Sort](http://shivajivarma.com/code-base/c-camp/2014/12/28/sorting-algorithms-bubble-sort/)
+[Bubble Sort](http://shivajivarma.com/code-base/2014/12/28/sorting-algorithms-bubble-sort/)
 ===============
 
 __Bubble sort__, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order.  
