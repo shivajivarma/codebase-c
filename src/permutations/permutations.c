@@ -1,35 +1,3 @@
-/*
-Problem statement: To print all permutation of given set of letters
-
-Input:
-
-N	// array size.
-
-arr[ ] 	// array.
-
-Output: permutations of letters.
-
-Eg:
-
-input: 		a	b	c
-
-output:	
-
-a	b	c
-
-a	c	b
-
-b	a	c
-
-b	c	a
-
-c	b	a
-
-c	a	b
-
-
-*/
-
 #include<stdio.h>
 
 void swap(char *m,char *n)
@@ -78,8 +46,3 @@ int main()
   permutations(arr,0,arrSize);
   return 0;
 }
-
-/*
-With regards,
-Shivaji Varma
-*/
