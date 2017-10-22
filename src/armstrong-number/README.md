@@ -1,4 +1,4 @@
-[Armstrong Number](http://codemons.com/codebase/armstrong-number/)
+[Armstrong Number](http://shivajivarma.com/code-base/2014/12/28/armstrong-number/)
 ===============
 
 An __Armstrong number__ is a number such that the sum of its digits raised to the third power is equal to the number itself.  
