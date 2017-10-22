@@ -1,4 +1,4 @@
-[Insertion Sort](http://shivajivarma.com/code-base/c-camp/2014/12/28/sorting-algorithms-insertion-sort/)
+[Insertion Sort](http://shivajivarma.com/code-base/2014/12/28/sorting-algorithms-insertion-sort/)
 ===============
 
 __Insertion sort__ is a simple sorting algorithm that builds the final sorted array (or list) one item at a time.  
