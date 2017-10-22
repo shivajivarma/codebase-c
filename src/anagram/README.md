@@ -1,4 +1,4 @@
-[Anagram](http://shivajivarma.com/code-base/c/2014/12/28/anagram/)
+[Anagram](http://shivajivarma.com/code-base/2014/12/28/armstrong-number/)
 ===============
 
 __Anagram__ is a word or phrase formed by reordering the letters of another word or phrase, such as satin to stain.
