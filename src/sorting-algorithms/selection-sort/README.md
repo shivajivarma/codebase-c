@@ -1,4 +1,4 @@
-[Selection Sort](http://shivajivarma.com/code-base/c-camp/2014/12/28/sorting-algorithms-selection-sort/)
+[Selection Sort](http://shivajivarma.com/code-base/2015/01/02/selection-sort/)
 ===============
 
 __Selection sort__ algorithm divides the input list into two parts: the sublist of items already sorted, which is built up from left to right at the front (left) of the list, and the sublist of items remaining to be sorted that occupy the rest of the list.  
