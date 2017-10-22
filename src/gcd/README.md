@@ -1,4 +1,4 @@
-[Greatest Common Divisor](http://shivajivarma.com/code-base/c/2015/01/03/greatest-common-divisor/)
+[Greatest Common Divisor](http://shivajivarma.com/code-base/2015/01/03/greatest-common-divisor/)
 ===============
 
 The __Greatest common divisor__ (GCD) of two or more integers (at least one of which is not zero), is the largest positive integer that divides the numbers without a remainder.</p>
