@@ -1,4 +1,4 @@
-[Merge Sort](http://shivajivarma.com/code-base/2014/12/28/merge-sort/)
+[Merge Sort](http://shivajivarma.com/code-base/2015/01/02/merge-sort/)
 ===============
 
 __Merge sort__ is a sorting algorithm that sorts data items into ascending or descending order, which comes under the category of comparison-based sorting. Here we apply the divide-and-conquer strategy to sort a given sequence of data items, which can be described as follows:
