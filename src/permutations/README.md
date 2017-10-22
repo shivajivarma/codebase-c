@@ -1,7 +1,7 @@
 [Permutations](http://shivajivarma.com/code-base/2015/01/05/binary-search/)
 =============
 
-> Program to print all permutation of given set of letters
+> Program to print all permutations of given set of letters
 
 ### Example
 ```
