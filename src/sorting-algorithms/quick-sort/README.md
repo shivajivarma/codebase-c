@@ -1,4 +1,4 @@
-[Quick Sort](http://shivajivarma.com/code-base/c-camp/2014/12/28/sorting-algorithms-merge-sort/)
+[Quick Sort](http://shivajivarma.com/code-base/2015/01/02/merge-sort/)
 ===============
 
 __Quick sort__ is a divide and conquer algorithm. Quicksort first divides a large array into two smaller sub-array: the low elements and the high elements. Quick sort can then recursively sort the sub-arrays.  
