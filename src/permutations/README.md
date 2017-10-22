@@ -1,4 +1,4 @@
-[Permutations](http://shivajivarma.com/code-base/2015/01/05/binary-search/)
+[Permutations](http://shivajivarma.com/code-base/2017/10/22/permutations/)
 =============
 
 > Program to print all permutations of given set of letters
