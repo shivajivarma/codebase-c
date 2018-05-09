@@ -26,13 +26,9 @@ int RunAllTests(void) {
     CuString *output = CuStringNew();
     CuSuite *suite = CuSuiteNew();
 
-    CuSuiteAddSuite(suite, CuAnagramSuite());
-    CuSuiteAddSuite(suite, CuArmstrongNumberSuite());
-    CuSuiteAddSuite(suite, CuGCDSuite());
-
 	'
 cat $FILES | grep '^CuSuite*' | 
-    sed -e 's/^CuSuite* //' \
+    sed -e 's/^CuSuite\* //' \
         -e 's/(.*$//' \
         -e 's/^/    CuSuiteAddSuite(suite, /' \
         -e 's/$/());/'
