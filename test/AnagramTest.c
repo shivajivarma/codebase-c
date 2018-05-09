@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "CuTest.h"
+#include "../lib/CuTest.h"
 #include "../src/anagram/anagram.h"
 
 
