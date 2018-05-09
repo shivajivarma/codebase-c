@@ -5,8 +5,8 @@ project (cutest C)
 FILE (GLOB LIB_HDR *.h)
 add_library (${PROJECT_NAME} lib/CuTest.c ${LIB_HDR})
 
-add_executable (CuTestTest test/AllTests.c test/AnagramTest.c test/ArmstrongNumberTest.c
-        test/GCDTest.c)
+FILE (GLOB TEST_FILES "*.c")
+add_executable (CuTestTest ${TEST_FILES})
 
 include_directories(src)
 add_subdirectory(src)
