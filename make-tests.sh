@@ -9,9 +9,37 @@
 if test $# -eq 0 ; then FILES=test/*.c ; else FILES=$* ; fi
 
 echo '
+#include <stdio.h>
+
+#include "../lib/CuTest.h"
+
+CuSuite *CuAnagramSuite(void);
+
+CuSuite *CuArmstrongNumberSuite(void);
+
+CuSuite *CuGCDSuite(void);
+
+int RunAllTests(void) {
+    CuString *output = CuStringNew();
+    CuSuite *suite = CuSuiteNew();
+
+    CuSuiteAddSuite(suite, CuAnagramSuite());
+    CuSuiteAddSuite(suite, CuArmstrongNumberSuite());
+    CuSuiteAddSuite(suite, CuGCDSuite());
+
+    CuSuiteRun(suite);
+    CuSuiteSummary(suite, output);
+    CuSuiteDetails(suite, output);
+    printf("%s\n", output->buffer);
+    return suite->failCount;
+}
+
+int main(void) {
+    return RunAllTests();
+}
 
 /* This is auto-generated code. Edit at your own peril. */
-#include <stdio.h>
+/*#include <stdio.h>
 #include <stdlib.h>
 
 #include "../lib/CuTest.h"
@@ -37,6 +65,7 @@ void RunAllTests(void)
     CuSuite* suite = CuSuiteNew();
     
     CuSuiteAddSuite(suite, CuAnagramSuite());
+	*/
 /*
 '
 cat $FILES | grep '^void Test' | 
@@ -48,7 +77,7 @@ cat $FILES | grep '^void Test' |
 echo \
 '
     */
-    
+    /*
     CuSuiteRun(suite);
     CuSuiteSummary(suite, output);
     CuSuiteDetails(suite, output);
@@ -61,4 +90,5 @@ int main(void)
 {
     RunAllTests();
 }
+*/
 '
