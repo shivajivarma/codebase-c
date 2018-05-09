@@ -38,8 +38,8 @@ echo \
     CuSuiteDetails(suite, output);
     printf("%s\n", output->buffer);
 	CuStringDelete(output);
-    CuSuiteDelete(suite);
-    //return suite->failCount;
+    //CuSuiteDelete(suite);
+    return suite->failCount;
 }
 
 int main(void) {
