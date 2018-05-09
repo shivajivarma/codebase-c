@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8.7)
 project (cutest C)
 
 FILE (GLOB LIB_HDR *.h)
-add_library (${PROJECT_NAME} test/lib/CuTest.c ${LIB_HDR})
+add_library (${PROJECT_NAME} lib/CuTest.c ${LIB_HDR})
 
 add_executable (CuTestTest test/AllTests.c test/AnagramTest.c test/ArmstrongNumberTest.c
         test/GCDTest.c)
