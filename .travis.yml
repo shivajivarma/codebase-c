@@ -3,7 +3,7 @@ compiler:
   - gcc
 
 before_script:
-  - bash make-tests.sh > test/AllTests.c
+  - bash make-tests.sh | tee test/AllTests.c
   - mkdir build
   - cd build
   - cmake ..
