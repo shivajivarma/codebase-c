@@ -25,17 +25,14 @@ echo \
 int RunAllTests(void) {
     CuString *output = CuStringNew();
     CuSuite *suite = CuSuiteNew();
-
 	'
 cat $FILES | grep '^CuSuite*' | 
     sed -e 's/^CuSuite\* //' \
         -e 's/(.*$//' \
         -e 's/^/    CuSuiteAddSuite(suite, /' \
         -e 's/$/());/'
-
 echo \
 '
-	
     CuSuiteRun(suite);
     CuSuiteSummary(suite, output);
     CuSuiteDetails(suite, output);
