@@ -9,15 +9,18 @@
 if test $# -eq 0 ; then FILES=test/*.c ; else FILES=$* ; fi
 
 echo '
+/* This is auto-generated code. Edit at your own peril. */
+
 #include <stdio.h>
 
 #include "../lib/CuTest.h"
 
-CuSuite *CuAnagramSuite(void);
-
-CuSuite *CuArmstrongNumberSuite(void);
-
-CuSuite *CuGCDSuite(void);
+'
+cat $FILES | grep '^CuSuite* ' | 
+    sed -e 's/$/;/'
+        
+echo \
+'
 
 int RunAllTests(void) {
     CuString *output = CuStringNew();
@@ -27,6 +30,16 @@ int RunAllTests(void) {
     CuSuiteAddSuite(suite, CuArmstrongNumberSuite());
     CuSuiteAddSuite(suite, CuGCDSuite());
 
+	'
+cat $FILES | grep '^CuSuite* ' | 
+    sed -e 's/^CuSuite* //' \
+        -e 's/(.*$//' \
+        -e 's/^/    CuSuiteAddSuite(suite, /' \
+        -e 's/$/);/'
+
+echo \
+'
+	
     CuSuiteRun(suite);
     CuSuiteSummary(suite, output);
     CuSuiteDetails(suite, output);
@@ -38,7 +51,6 @@ int main(void) {
     return RunAllTests();
 }
 
-/* This is auto-generated code. Edit at your own peril. */
 /*#include <stdio.h>
 #include <stdlib.h>
 
@@ -86,9 +98,5 @@ echo \
     CuSuiteDelete(suite);
 }
 
-int main(void)
-{
-    RunAllTests();
-}
 */
 '
