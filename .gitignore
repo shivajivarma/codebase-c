@@ -2,3 +2,7 @@
 
 config
 bin
+build
+CMakeFiles
+.idea
+AllTests.c
