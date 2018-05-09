@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "lib/CuTest.h"
+#include "../lib/CuTest.h"
 #include "../src/armstrong-number/armstrong-number.h"
 
 
