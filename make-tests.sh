@@ -14,7 +14,7 @@ echo '
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "lib/CuTest.h"
+#include "../lib/CuTest.h"
 
 '
 
