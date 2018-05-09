@@ -22,6 +22,11 @@ cat $FILES | grep '^void Test' |
     sed -e 's/(.*$//' \
         -e 's/$/(CuTest*);/' \
         -e 's/^/extern /'
+        
+        
+cat $FILES | grep '^CuSuite*' | 
+    sed -e 's/$/;/'
+        
 
 echo \
 '
