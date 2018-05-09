@@ -35,7 +35,9 @@ void RunAllTests(void)
 {
     CuString *output = CuStringNew();
     CuSuite* suite = CuSuiteNew();
-
+    
+    CuSuiteAddSuite(suite, CuAnagramSuite());
+/*
 '
 cat $FILES | grep '^void Test' | 
     sed -e 's/^void //' \
@@ -45,6 +47,8 @@ cat $FILES | grep '^void Test' |
 
 echo \
 '
+    */
+    
     CuSuiteRun(suite);
     CuSuiteSummary(suite, output);
     CuSuiteDetails(suite, output);
