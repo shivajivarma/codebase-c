@@ -16,7 +16,7 @@ echo '
 #include "../lib/CuTest.h"
 
 '
-cat $FILES | grep '^CuSuite* ' | 
+cat $FILES | grep '^CuSuite*' | 
     sed -e 's/$/;/'
         
 echo \
@@ -31,11 +31,11 @@ int RunAllTests(void) {
     CuSuiteAddSuite(suite, CuGCDSuite());
 
 	'
-cat $FILES | grep '^CuSuite* ' | 
+cat $FILES | grep '^CuSuite*' | 
     sed -e 's/^CuSuite* //' \
         -e 's/(.*$//' \
         -e 's/^/    CuSuiteAddSuite(suite, /' \
-        -e 's/$/);/'
+        -e 's/$/());/'
 
 echo \
 '
@@ -44,42 +44,22 @@ echo \
     CuSuiteSummary(suite, output);
     CuSuiteDetails(suite, output);
     printf("%s\n", output->buffer);
-    return suite->failCount;
+	CuStringDelete(output);
+    CuSuiteDelete(suite);
+    //return suite->failCount;
 }
 
 int main(void) {
     return RunAllTests();
 }
 
-/*#include <stdio.h>
-#include <stdlib.h>
-
-#include "../lib/CuTest.h"
-
+/*
 '
-
 cat $FILES | grep '^void Test' | 
     sed -e 's/(.*$//' \
         -e 's/$/(CuTest*);/' \
         -e 's/^/extern /'
-        
-        
-cat $FILES | grep '^CuSuite*' | 
-    sed -e 's/$/;/'
-        
-
-echo \
-'
-
-void RunAllTests(void) 
-{
-    CuString *output = CuStringNew();
-    CuSuite* suite = CuSuiteNew();
-    
-    CuSuiteAddSuite(suite, CuAnagramSuite());
-	*/
-/*
-'
+ 
 cat $FILES | grep '^void Test' | 
     sed -e 's/^void //' \
         -e 's/(.*$//' \
@@ -88,15 +68,5 @@ cat $FILES | grep '^void Test' |
 
 echo \
 '
-    */
-    /*
-    CuSuiteRun(suite);
-    CuSuiteSummary(suite, output);
-    CuSuiteDetails(suite, output);
-    printf("%s\n", output->buffer);
-    CuStringDelete(output);
-    CuSuiteDelete(suite);
-}
-
 */
 '
