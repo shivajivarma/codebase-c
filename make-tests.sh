@@ -17,7 +17,7 @@ echo '
 
 '
 cat $FILES | grep '^CuSuite*.*(' | 
-    sed -e 's/$//'
+    sed -e 's/$/;/'
         
 echo \
 '
