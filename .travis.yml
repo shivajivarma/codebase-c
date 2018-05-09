@@ -8,6 +8,6 @@ before_script:
   - cd build
   - cmake ..
 
-script: 
-    - make && make test
-    - ./CuTestTest
+script: make && make test
+
+after_failure: ./CuTestTest
