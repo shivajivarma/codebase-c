@@ -3,6 +3,7 @@ compiler:
   - gcc
 
 before_script:
+  - bash make-tests.sh
   - mkdir build
   - cd build
   - cmake ..
