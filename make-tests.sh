@@ -13,11 +13,11 @@ echo '
 
 #include <stdio.h>
 
-#include "../lib/CuTest.h"
+#include "lib/CuTest.h"
 
 '
-cat $FILES | grep '^CuSuite*' | 
-    sed -e 's/$/;/'
+cat $FILES | grep '^CuSuite*.*(' | 
+    sed -e 's/$//'
         
 echo \
 '
