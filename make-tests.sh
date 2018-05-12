@@ -16,8 +16,10 @@ echo '
 #include "lib/CuTest.h"
 
 '
-cat $FILES | grep '^CuSuite*.*(' | 
-    sed -e 's/$/;/'
+cat $FILES | grep '^void Test' | 
+    sed -e 's/(.*$//' \
+        -e 's/$/(CuTest*);/' \
+        -e 's/^/extern /'
         
 echo \
 '
@@ -26,11 +28,11 @@ int RunAllTests(void) {
     CuString *output = CuStringNew();
     CuSuite *suite = CuSuiteNew();
 	'
-cat $FILES | grep '^CuSuite*' | 
-    sed -e 's/^CuSuite\* //' \
+cat $FILES | grep '^void Test' | 
+    sed -e 's/^void //' \
         -e 's/(.*$//' \
-        -e 's/^/    CuSuiteAddSuite(suite, /' \
-        -e 's/$/());/'
+        -e 's/^/    SUITE_ADD_TEST(suite, /' \
+        -e 's/$/);/'
 echo \
 '
     CuSuiteRun(suite);
@@ -48,16 +50,15 @@ int main(void) {
 
 /*
 '
-cat $FILES | grep '^void Test' | 
-    sed -e 's/(.*$//' \
-        -e 's/$/(CuTest*);/' \
-        -e 's/^/extern /'
- 
-cat $FILES | grep '^void Test' | 
-    sed -e 's/^void //' \
+cat $FILES | grep '^CuSuite*.*(' | 
+    sed -e 's/$/;/'
+	
+	
+cat $FILES | grep '^CuSuite*' | 
+    sed -e 's/^CuSuite\* //' \
         -e 's/(.*$//' \
-        -e 's/^/    SUITE_ADD_TEST(suite, /' \
-        -e 's/$/);/'
+        -e 's/^/    CuSuiteAddSuite(suite, /' \
+        -e 's/$/());/'
 
 echo \
 '

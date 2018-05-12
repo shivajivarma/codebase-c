@@ -23,13 +23,3 @@ void TestIsArmstrongFailCases(CuTest* tc)
 	CuAssertTrue(tc, !isArmstrong(150));
 	CuAssertTrue(tc, !isArmstrong(1150));
 }
-
-CuSuite* CuArmstrongNumberSuite(void)
-{
-	CuSuite* suite = CuSuiteNew();
-
-	SUITE_ADD_TEST(suite, TestIsArmstrongPassCases);
-	SUITE_ADD_TEST(suite, TestIsArmstrongFailCases);
-
-	return suite;
-}
