@@ -15,8 +15,8 @@
 void TestRandomNumber(CuTest* tc)
 {
   int rand = generateRandomNumber(100);
-	CuAssertTrue(tc, (rand < 1 || rand > 100));
+	CuAssertTrue(tc, rand >= 1 && rand <= 100);
   
   rand = generateRandomNumber(500);
-	CuAssertTrue(tc, (rand < 1 || rand > 500));
+	CuAssertTrue(tc, rand >= 1 && rand <= 500);
 }
