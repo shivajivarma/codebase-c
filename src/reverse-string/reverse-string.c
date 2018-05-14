@@ -1,17 +1,3 @@
-/*
-Program to reverse a portion of a stentence from postion start to end.
-
-Eg: 
-Enter a string: hello world
-Enter start and end positions: 0 4
-
-Reverse of portion of the sentence:
-olleh world
-
-Reverse of entire sentence:
-dlrow olleh
-*/
-
 #include <stdio.h>
 #include <string.h>
 
@@ -33,7 +19,7 @@ void main(){
 	int start, end;
 	
 	printf("Enter a string: ");
-	gets(str);
+	fgets(str, sizeof(str), stdin);
 	strcpy(revStr,str);
 	
 	printf("Enter start and end positions: ");
