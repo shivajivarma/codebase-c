@@ -8,7 +8,13 @@ FILE (GLOB SOURCE_FILES_LIST *.c)
 
 #set(ANAGRAM_FILES anagram/main.c anagram/anagram.c)
 
-include_directories(./)
+aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR} SUB_SOURCES)
+
+set(SOURCE_FILES
+  ${SOURCE}
+  ${SUB_SOURCES}
+  PARENT_SCOPE
+)
 
 add_library(src STATIC ${SOURCE_FILES})
 
