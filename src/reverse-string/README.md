@@ -1,4 +1,4 @@
-Program to reverse a portion of a stentence from postion start to end.
+> Program to reverse a portion of a stentence from postion start to end.
 
 Example: 
 ```bash
