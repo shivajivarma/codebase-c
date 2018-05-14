@@ -4,12 +4,12 @@ project(src)
 
 #add_definitions(-std=c++11)
 
-FILE (GLOB SOURCE_FILES_LIST ./*.c)
+FILE (GLOB SOURCE_FILES_LIST "*.c")
 
 #set(ANAGRAM_FILES anagram/main.c anagram/anagram.c)
 
 
 #set(SOURCE_FILES ${SOURCE_FILES_LIST})
 
-add_library(src STATIC anagram/main.c anagram/anagram.c)
+add_library(src STATIC ${SOURCE_FILES_LIST})
 
