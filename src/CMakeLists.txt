@@ -9,7 +9,7 @@ FILE (GLOB SOURCE_FILES_LIST ./*.c)
 #set(ANAGRAM_FILES anagram/main.c anagram/anagram.c)
 
 
-set(SOURCE_FILES ${SOURCE_FILES_LIST})
+#set(SOURCE_FILES ${SOURCE_FILES_LIST})
 
-add_library(src STATIC ${SOURCE_FILES_LIST})
+add_library(src STATIC anagram/main.c anagram/anagram.c)
 
