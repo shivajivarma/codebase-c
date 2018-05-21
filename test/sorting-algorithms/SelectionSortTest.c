@@ -7,7 +7,7 @@
 #include "../lib/CuTest.h"
 #include "../src/sorting-algorithms/selection-sort/selection-sort.h"
 
-void TestInsertionSortPassCases(CuTest* tc)
+void TestSelectionSortPassCases(CuTest* tc)
 {
 	int arrA[] = {9, 4, 15, 7, 75};
 	selectionSort(arrA, 5);
