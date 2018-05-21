@@ -5,7 +5,7 @@
 #include <string.h>
 
 #include "../lib/CuTest.h"
-#include "../src/sorting-algorithms/selection-sort/selectionSort.h"
+#include "../src/sorting-algorithms/selection-sort/selection-sort.h"
 
 void TestInsertionSortPassCases(CuTest* tc)
 {
