@@ -17,5 +17,3 @@ Since this replacement reduces the larger of the two numbers,
 repeating this process gives successively smaller pairs of 
 numbers until the two numbers become equal. 
 When that occurs, they are the GCD of the original two numbers. 
-
-For example, the GCD of 8 and 12 is 4.
