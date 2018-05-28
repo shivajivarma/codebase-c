@@ -6,15 +6,3 @@ The __Greatest common divisor__ (GCD) of two or more integers (at least one of w
 For example, the GCD of 8 and 12 is 4.
 
 > Program to compute greatest common divisor.
-
-### CODE
-```c
-int gcd(int a,int b) {
-    if(b % a == 0)
-        return a;
-    else
-        return gcd(c,a);
-}
-```
-
-:+1:
