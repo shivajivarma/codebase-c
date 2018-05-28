@@ -1,7 +1,6 @@
-int gcd(int a, int b) {
-    int c = b % a;
-    if (c == 0)
-        return a;
-    else
-        return gcd(c, a);
+int gcd(int a, int b)
+{
+    if (a == 0)
+        return b;
+    return gcd(b%a, a);
 }
