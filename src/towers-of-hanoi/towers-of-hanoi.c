@@ -17,6 +17,6 @@ int main()
      printf("ENTER THE NUMBER OF DISKS");
      scanf("%d",&n);
      towhan(n,'A','B','C');
-     getch();
+     int getch();
      return 0;
 }

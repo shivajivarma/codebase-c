@@ -2,10 +2,6 @@ cmake_minimum_required(VERSION 2.8.7)
 
 project(src)
 
-#add_definitions(-std=c++11)
-
 FILE (GLOB_RECURSE SOURCE_FILES_LIST *.c)
-
-#set(ANAGRAM_FILES anagram/main.c anagram/anagram.c)
 
 add_library(src STATIC ${SOURCE_FILES_LIST})

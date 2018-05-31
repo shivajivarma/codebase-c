@@ -1,27 +1,36 @@
 #include <stdio.h>
 
-int main()
-{
-    int row, c, n;
-    char ch[4];
+void rightAngledTriangleRight(int n, char ch);
 
-    printf("Enter the number of rows in triangle :: ");
-    scanf("%d",&n);
-    printf("Enter a character to be printed :: ");
-    scanf("%s",&ch);
+void rightAngledTriangleRight(int n, char ch){
+	int row;
+	int col;
+	for (row = 1; row <= n; row++)
+    {
 
-    for ( row = 1 ; row <= n ; row++ ) {
+        for (col = 1; col <= n - row; col++)
+            printf (" ");
 
-        for ( c = 1 ; c <= n-row ; c++ ) {
-            printf(" ");
-        }
 
-        for ( c = 1 ; c <= row ; c++ ) {
-            printf("%c", ch[0]);
-        }
+        for (col = 1; col <= row; col++)
+            printf ("%c", ch);
 
-        printf("\n");
+
+        printf ("\n");
     }
+}
 
+int main ()
+{
+    int n;
+    char ch;
+
+    printf ("Enter the number of rows in triangle :: ");
+    scanf ("%d", &n);
+    printf ("Enter a character to be printed :: ");
+    scanf (" %c", &ch);
+
+    rightAngledTriangleLeft(n, ch);
+	
     return 0;
 }
