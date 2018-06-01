@@ -5,7 +5,7 @@
 #include <string.h>
 
 #include "../lib/CuTest.h"
-#include "../src/leap-year/leap-year.h"
+#include "../src/date/leap-year/leap-year.h"
 
 
 /*-------------------------------------------------------------------------*

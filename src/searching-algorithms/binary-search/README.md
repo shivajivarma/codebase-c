@@ -5,8 +5,6 @@ A __Binary search__ locates an item in a sorted array by repeatedly dividing the
 
 Binary Search is an O(log n) algorithm, which is more efficient than a linear search for large arrays.
 
-> Program to perform search on sorted set of numbers using Binary search technique.
-
 ### Example
 ```
 Enter size of the array :: 8
@@ -17,26 +15,3 @@ Enter the number to be searched :: 102
 
 102 is present at location 7.
 ```
-
-### CODE
-```c
-int binarySearch(int arr[], int arrSize, int search) {
-    int low = 0, high = arrSize - 1, pos = -1;
-
-    while (low <= high) {
-        int mid = (low + high) / 2;
-        if (search == arr[mid]) {
-            pos = mid;
-            break;
-        } else if (search < arr[mid]) {
-            high = mid - 1;
-        } else {
-            low = mid + 1;
-        }
-    }
-
-    return pos; // return -1, if search number is not found
-}
-```
-
-:+1:
